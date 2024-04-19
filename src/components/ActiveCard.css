@@ -1,63 +1,62 @@
-.Mainwrap {
-    width: 370px;
-    height: 241px;
-    border: none;
-    border-radius: 8px;
-    background-color: rgb(195, 197, 200);
-    margin-bottom: 60px;
-    font-family: 'PT Mono';
-    flex-shrink: 0;
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-
-    & .header__chip_light {
-        padding: 25px 0 0 25px;
-        width: 45px;
-    }
-}
-
-.card_number {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 10px 0 15px 0;
-    font-size: 29px;
-    font-weight: 600;
-}
-
-.footer {
-    display: flex;
-    justify-content: space-between;
-    height: 80px;
-}
-
-
-.owner,
-.expiration {
-    text-transform: uppercase;
+.main-card{
     display: flex;
     flex-direction: column;
-    align-items: baseline;
-
-
-    & .owner__info,
-    .expiration__info {
-        font-size: 11px;
-        margin: 0;
-        color: rgb(0,0,0, 0.6);
-    }
-
-    .owner__name,
-    .expiration__date {
-        font-size: 18px;
-        margin: 0 0 0 20px;
-    }
-
+    width: 382px;
+    height: 241px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5%;
 }
 
-.expiration {
-    width: 100px;
+.card-details{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 15px;
+    margin-left: 15px;
 }
+.input{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.images{
+    margin-top: 20px;
+    margin-right: 15px;
+    margin-left: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.num{
+    margin-top: 0;
+    font-size: 25px;
+}
+
+#a{
+    background-color: yellow;
+    background-image: url(../assets/vendor-bitcoin.svg);
+    background-repeat: no-repeat;
+    justify-content: flex-end;
+    background-position: right top;
+   color: black;
+    }
+    #b{
+    background-color: black;
+    color: white;
+    background-image: url(../assets/vendor-ninja.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    }
+    #c{
+    background-color: purple;
+    background-repeat: no-repeat;
+    color: white;
+    background-position: right top;
+    background-image: url(../assets/vendor-blockchain.svg);
+    }
+    #d{
+        background-color: red;
+        color: white;
+        background-position: right top;
+        background-repeat: no-repeat;
+        background-image: url(../assets/vendor-evil.svg);
+    }

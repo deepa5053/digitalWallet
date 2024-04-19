@@ -12,11 +12,12 @@ function CardList() {
   const [activeCard, setActiveCard] = useState({});
 
   const makeCardActive = (card) => {
+    console.log('inside make card active')
     setActiveCard(card);
   }
 
-  const card =[] 
-  //useSelector(state => state.AddNewCard); 
+  const card = 
+  useSelector(state => state.AddNewCard); 
   
 
   const navigate = useNavigate();
@@ -37,15 +38,15 @@ function CardList() {
       <p className='Info'>active card</p>
       {activeCard && <ActiveCard {...activeCard} />}
       <section className='Card_stack'>
-        {card.map((card, index) => {
+        {card && card.map((card, index) => {
           return (
             <Card
               key={index}
-              cardNumber={card.cardNumber}
-              cardHolderName={card.cardHolderName}
-              expirationDate={card.Date}
-              ccv={card.ccv}
-              vendor={card.vendor}
+              cardNumber={card.CardNumContext}
+              cardHolderName={card.CardNameContext}
+              expirationDate={card.ValidContext}
+              
+              vendor={card.VendorContext}
               onClick={() => makeCardActive(card)}
             />
           )
