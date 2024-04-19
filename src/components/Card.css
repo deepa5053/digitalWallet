@@ -1,0 +1,62 @@
+.main-card{
+    display: flex;
+    flex-direction: column;
+    width: 382px;
+    height: 241px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5%;
+}
+
+.card-details{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.input{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.images{
+    margin-top: 20px;
+    margin-right: 15px;
+    margin-left: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.num{
+    margin-top: 0;
+    font-size: 25px;
+}
+
+#a{
+    background-color: yellow;
+    background-image: url(../assets/vendor-bitcoin.svg);
+    background-repeat: no-repeat;
+    justify-content: flex-end;
+    background-position: right top;
+   
+    }
+    #b{
+    background-color: black;
+    color: white;
+    background-image: url(../assets/vendor-ninja.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    }
+    #c{
+    background-color: purple;
+    background-repeat: no-repeat;
+    color: white;
+    background-position: right top;
+    background-image: url(../assets/vendor-blockchain.svg);
+    }
+    #d{
+        background-color: red;
+        color: white;
+        background-position: right top;
+        background-repeat: no-repeat;
+        background-image: url(../assets/vendor-evil.svg);
+    }

@@ -1,0 +1,22 @@
+.card-form{
+    display: flex;
+    flex-direction: column;
+    width: 382px;
+    margin-top: 20px;
+}
+.card-btn{
+    background-color: black;
+    color: white;
+    width: 382px;
+    border-radius: 8px;
+    height: 72px;
+    margin-top: 20px;
+}
+label{
+    display: flex;
+    text-align: left;
+    margin-top: 5px;
+}
+input{
+    border-radius: 5px;
+}
